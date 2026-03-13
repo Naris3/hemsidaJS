@@ -3,7 +3,8 @@ body{
     justify-content: center;
     display: block;
 }
-#addNamn, #randomNamn{
+#addNamn, 
+#randomNamn{
     font-size: 25px;
 }
 h1{
