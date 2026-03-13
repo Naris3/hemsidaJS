@@ -3,6 +3,9 @@ body{
     justify-content: center;
     display: block;
 }
+#addNamn, #randomNamn{
+    font-size: 20px;
+}
 h1{
     font-size: 50px;
     margin-top: 75px;
@@ -10,4 +13,5 @@ h1{
 h2{
     padding: auto;
     display: inline-block;
+    font-size:30px;
 }
