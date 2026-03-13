@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    justify-content: center;
+    display: block;
+}
+h1{
+    font-size: 50px;
+    margin-top: 75px;
+}
+h2{
+    padding: auto;
+    display: inline-block;
+}
