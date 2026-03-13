@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Slumpmässigt </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Slumpmässigt urval</h1>
+  <button id="addNamn">Lägg till namn</button>
+  <button id="randomNamn">Dra vinnare</button>
+  <h2 id="result"></h2>
+
+  <script>
+    document.getElementById(`addNamn`,`randomNamn`).style.marginTop=`100px`;
+    document.body.style.backgroundColor= `antiquewhite`;
+    document.getElementById(`randomNamn`).style.backgroundColor=`#7fffd4`;
+
+    document.getElementById(`result`).style.backgroundColor=`rgb(255, 80, 80)`;
+    let names = []; 
+    
+    document.getElementById(`addNamn`).addEventListener(`click`, function() {
+      let name = prompt("Skriv in namn:");
+      if (name) {
+        names.push(name);
+        alert("'" + name + "' lades till!");
+      }
+      console.log(name)
+    });
+    
+    document.getElementById(`randomNamn`).addEventListener(`click`,function(){
+       let random = names[Math.floor(Math.random() * names.length)];
+       if (names.length > 0) {
+        document.getElementById('result').innerHTML = '🎉 Vinnare: ' + random + ' 🎉';
+      } else {
+        alert("Inga namn än! Lägg till namn först");
+      }
+      console.log(random)
+    })
+
+  </script>
+</body>
+</html>
